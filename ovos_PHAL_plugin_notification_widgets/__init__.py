@@ -130,38 +130,41 @@ class OVOSNotificationWidgetsPlugin(PHALPlugin):
     def __widgetsAPI_handle_handle_widget_display(self, message):
         """ Handle Widget Display """
         LOG.info("Widgets API: Handle Widget Display")
-        widget_data = message.data.get("widget", "")
-        if widget_data["type"] == "timer":
+        widget_data = message.data.get("data", "")
+        widget_type = message.data.get("type", "")
+        if widget_type == "timer":
             self.bus.emit(Message("ovos.widgets.timer.display", data={
                 "widget": widget_data}))
-        elif widget_data["type"] == "alarm":
+        elif widget_type == "alarm":
             self.bus.emit(Message("ovos.widgets.alarm.display", data={
                 "widget": widget_data}))
-        elif widget_data["type"] == "audio":
+        elif widget_type == "audio":
             self.bus.emit(Message("ovos.widgets.media.display", data={
                 "widget": widget_data}))
 
     def __widgetsAPI_handle_handle_widget_remove(self, message):
         """ Handle Widget Remove """
         LOG.info("Widgets API: Handle Widget Remove")
-        widget_data = message.data.get("widget", "")
-        if widget_data["type"] == "timer":
+        widget_data = message.data.get("data", "")
+        widget_type = message.data.get("type", "")
+        if widget_type == "timer":
             self.bus.emit(Message("ovos.widgets.timer.remove"))
-        elif widget_data["type"] == "alarm":
+        elif widget_type == "alarm":
             self.bus.emit(Message("ovos.widgets.alarm.remove"))
-        elif widget_data["type"] == "audio":
+        elif widget_type == "audio":
             self.bus.emit(Message("ovos.widgets.media.remove"))
 
     def __widgetsAPI_handle_handle_widget_update(self, message):
         """ Handle Widget Update """
         LOG.info("Widgets API: Handle Widget Update")
-        widget_data = message.data.get("widget", "")
-        if widget_data["type"] == "timer":
+        widget_data = message.data.get("data", "")
+        widget_type = message.data.get("type", "")
+        if widget_type == "timer":
             self.bus.emit(Message("ovos.widgets.timer.update", data={
                 "widget": widget_data}))
-        elif widget_data["type"] == "alarm":
+        elif widget_type == "alarm":
             self.bus.emit(Message("ovos.widgets.alarm.update", data={
                 "widget": widget_data}))
-        elif widget_data["type"] == "audio":
+        elif widget_type == "audio":
             self.bus.emit(Message("ovos.widgets.media.update", data={
                 "widget": widget_data}))
