@@ -20,6 +20,10 @@ class OVOSNotificationWidgetsPlugin(PHALPlugin):
                     self.__notificationAPI_handle_clear_notification_storage)
         self.bus.on("ovos.notification.api.storage.clear.item",
                     self.__notificationAPI_handle_clear_notification_storage_item)
+        self.bus.on("ovos.notification.api.set.controlled",
+                    self.__notificationAPI_handle_display_controlled)
+        self.bus.on("ovos.notification.api.remove.controlled",
+                    self.__notificationAPI_handle_remove_controlled)
 
         self.bus.on("ovos.widgets.display",
                     self.__widgetsAPI_handle_handle_widget_display)
@@ -62,6 +66,21 @@ class OVOSNotificationWidgetsPlugin(PHALPlugin):
             self.bus.emit(Message("ovos.notification.notification_data", data={
                           "notification": notification_message}))
             self.bus.emit(Message("ovos.notification.show"))
+
+    def __notificationAPI_handle_display_controlled(self, message):
+        """ Get Controlled Notification """
+        notification_message = {
+            "sender": message.data.get("sender", ""),
+            "text": message.data.get("text", ""),
+            "style": message.data.get("style", "info"),
+            "timestamp": time.time()
+        }
+        self.bus.emit(Message("ovos.notification.controlled.type.show",
+                      data={"notification": notification_message}))
+
+    def __notificationAPI_handle_remove_controlled(self, message):
+        """ Remove Controlled Notification """
+        self.bus.emit(Message("ovos.notification.controlled.type.remove"))
 
     def __notificationAPI_handle_clear_notification_data(self, message):
         """ Clear Pop Notification """
