@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.0a4...HEAD)
+
+**Merged pull requests:**
+
+- add callback\_data to set method for general notifications [\#2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/pull/2) ([AIIX](https://github.com/AIIX))
+
+## [V1.0.0a4](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/tree/V1.0.0a4) (2022-10-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.0a3...V1.0.0a4)
+
 ## [V1.0.0a3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/tree/V1.0.0a3) (2022-09-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.0a2...V1.0.0a3)
