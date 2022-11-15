@@ -55,7 +55,7 @@ class OVOSNotificationWidgetsPlugin(PHALPlugin):
             "action": message.data.get("action", ""),
             "type": message.data.get("type", ""),
             "style": message.data.get("style", "info"),
-            "callback_data": message.data.get("callback_data", ""),
+            "callback_data": message.data.get("callback_data", {}),
             "timestamp": time.time()
         }
         if notification_message not in self.__notificationAPI_notifications_model:
