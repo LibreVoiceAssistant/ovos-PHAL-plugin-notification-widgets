@@ -50,6 +50,7 @@ class OVOSNotificationWidgetsPlugin(PHALPlugin):
         """ Get Notification & Action """
         LOG.info("Notification API: Display Notification")
         notification_message = {
+            "duration": message.data.get("duration", 10),
             "sender": message.data.get("sender", ""),
             "text": message.data.get("text", ""),
             "action": message.data.get("action", ""),
