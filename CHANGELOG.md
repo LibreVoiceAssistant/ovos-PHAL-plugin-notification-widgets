@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.0...HEAD)
+
+**Closed issues:**
+
+- Notification enhancements [\#3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/issues/3)
+
+**Merged pull requests:**
+
+- add configuration option for transient pop notification [\#4](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/pull/4) ([emphasize](https://github.com/emphasize))
+
+## [V1.0.0](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/tree/V1.0.0) (2022-11-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.0a5...V1.0.0)
+
 ## [V1.0.0a5](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/tree/V1.0.0a5) (2022-11-15)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.0a4...V1.0.0a5)
