@@ -2,11 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.0...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.1a1...HEAD)
 
 **Closed issues:**
 
 - Notification enhancements [\#3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/issues/3)
+
+## [V1.0.1a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/tree/V1.0.1a1) (2023-01-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-notification-widgets/compare/V1.0.0...V1.0.1a1)
 
 **Merged pull requests:**
 
