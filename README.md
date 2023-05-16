@@ -1,5 +1,9 @@
-# OVOS PHAL Notification and Wigets Plugin
+# DEPRECATED - OVOS PHAL Notification and Widgets Plugin
 
+
+This repository is no longer maintained by OpenVoiceOS, use https://github.com/OpenVoiceOS/ovos-gui-plugin-shell-companion instead
+
+___________________________
 The PHAL Plugin provides interfaces and API for OpenVoiceOS GUI notifications and widgets system. The notifications API supports 3 types of notification systems:
 
 - Transient Notifications: A transient notification is displayed on the screen only for a specific period of time and it its not dismissed will be stored for the user to view the missed notification. A transient notification can be used by skills to inform the user of missed events like reminders and device notifications
